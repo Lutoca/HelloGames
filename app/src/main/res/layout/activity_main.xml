@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.epita.hellogames.MainActivity">
+
+    <Button
+        android:id="@+id/gameTL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/BlueHorizontale"
+        app:layout_constraintTop_toTopOf="@id/BlueVerticale"
+        app:layout_constraintRight_toLeftOf="@id/BlueVerticale"
+        app:layout_constraintBottom_toTopOf="@id/BlueHorizontale"
+        app:layout_constraintVertical_weight="1"
+        />
+
+    <View
+        android:id="@+id/BlueVerticale"
+        android:layout_width="2dp"
+        android:layout_height="300dp"
+        android:background="@color/blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/gameTR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="@id/BlueHorizontale"
+        app:layout_constraintLeft_toRightOf="@id/BlueVerticale"
+        app:layout_constraintTop_toTopOf="@id/BlueVerticale"
+        app:layout_constraintBottom_toTopOf="@id/BlueHorizontale"
+        app:layout_constraintVertical_weight="2"
+        />
+
+    <View
+        android:id="@+id/BlueHorizontale"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/gameBL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/BlueVerticale"
+        app:layout_constraintLeft_toLeftOf="@id/BlueHorizontale"
+        app:layout_constraintRight_toLeftOf="@id/BlueVerticale"
+        app:layout_constraintTop_toBottomOf="@id/BlueHorizontale"
+        app:layout_constraintVertical_weight="2"
+        />
+
+
+
+    <Button
+        android:id="@+id/gameBR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/BlueVerticale"
+        app:layout_constraintRight_toRightOf="@id/BlueHorizontale"
+        app:layout_constraintLeft_toRightOf="@id/BlueVerticale"
+        app:layout_constraintTop_toBottomOf="@id/BlueHorizontale"
+        app:layout_constraintVertical_weight="2"
+        />
+
+</android.support.constraint.ConstraintLayout>

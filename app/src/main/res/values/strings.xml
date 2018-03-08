@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hello Games</string>
+    <string name="title_activity_selected_game">Game Info</string>
+    <string name="name_text_default">Name : </string>
+    <string name="type_text_default">Type : </string>
+    <string name="nbplayers_text_default">Nb players : </string>
+    <string name="year_text_default">Year : </string>
+    <string name="default_value">Default</string>
+    <string name="description_text_default">There is the description.</string>
+    <string name="text_button_want_more">DO YOU WANT TO KNOW MORE ?</string>
+
+</resources>

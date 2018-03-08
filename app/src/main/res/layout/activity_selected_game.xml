@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.epita.hellogames.MainActivity">
+
+   <TextView
+       android:id="@+id/title_activity"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/title_activity_selected_game"
+       android:textSize="40dp"
+       android:textColor="@color/blue"
+       android:textStyle="bold|italic"
+       android:gravity="center"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       />
+
+    <View
+        android:id="@+id/game_view"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@color/grey"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text_default"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@id/game_view"
+        app:layout_constraintTop_toBottomOf="@id/title_activity"
+        />
+    <TextView
+        android:id="@+id/type_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/type_text_default"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@id/game_view"
+        app:layout_constraintTop_toBottomOf="@id/name_text"
+        />
+    <TextView
+        android:id="@+id/nbplayers_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:text="@string/nbplayers_text_default"
+        app:layout_constraintLeft_toRightOf="@id/game_view"
+        app:layout_constraintTop_toBottomOf="@id/type_text"
+        />
+    <TextView
+        android:id="@+id/year_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:text="@string/year_text_default"
+        app:layout_constraintLeft_toRightOf="@id/game_view"
+        app:layout_constraintTop_toBottomOf="@id/nbplayers_text"
+        />
+
+
+ <TextView
+     android:id="@+id/set_name_text"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:text="@string/default_value"
+     android:paddingLeft="5dp"
+     app:layout_constraintLeft_toRightOf="@id/name_text"
+     app:layout_constraintTop_toBottomOf="@id/title_activity"
+     />
+ <TextView
+     android:id="@+id/set_type_text"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:text="@string/default_value"
+     android:paddingLeft="5dp"
+     app:layout_constraintLeft_toRightOf="@id/type_text"
+     app:layout_constraintTop_toBottomOf="@id/name_text"
+     />
+ <TextView
+     android:id="@+id/set_nbplayers_text"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:paddingLeft="5dp"
+     android:text="@string/default_value"
+     app:layout_constraintLeft_toRightOf="@id/nbplayers_text"
+     app:layout_constraintTop_toBottomOf="@id/type_text"
+     />
+ <TextView
+     android:id="@+id/set_year_text"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:paddingLeft="5dp"
+     android:text="@string/default_value"
+     app:layout_constraintLeft_toRightOf="@id/year_text"
+     app:layout_constraintTop_toBottomOf="@id/nbplayers_text"
+     />
+
+
+
+ <TextView
+        android:id="@+id/description_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_text_default"
+        android:paddingTop="70dp"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/game_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_want_more"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_want_more"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@id/description_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
